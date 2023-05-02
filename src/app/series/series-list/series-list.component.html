@@ -1,0 +1,25 @@
+<!-- Cuerpo de la aplicación -->
+<div class="row container-fluid" id="cuerpo">
+  <!-- Lista de series-->
+  <div class="col-5 container-fluid" id="tablaSeries">
+      <table class="table">
+        <tr>
+          <th>#</th>
+          <th>Name</th>
+          <th>Channel</th>
+          <th>Seasons</th>
+        </tr>
+        <tr *ngFor="let s of series">
+          <td style="font-weight: bold;">{{s.id}}</td>
+          <td>{{s.name}}</td>
+          <td>{{s.channel}}</td>
+          <td>{{s.seasons}}</td>
+        </tr>
+      </table>
+
+      <p> Seasons average: {{promedioTemporadas}}</p>
+  </div>
+
+  <!-- Relleno -->
+  <div class="col-7" container-fluid></div>
+</div>
